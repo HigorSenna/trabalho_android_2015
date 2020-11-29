@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.br.receitamedicaapp.activity.CadastroReceitaMedicaActivity">
+
+    <ProgressBar
+        android:id="@+id/login_progress"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:visibility="gone" />
+
+    <ScrollView
+        android:id="@+id/login_form"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/email_login_form"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true">
+
+            <EditText
+                android:id="@+id/txtCpfPacienteCadastroReceita"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="CPF Paciente"
+                android:maxLength="11"
+                android:inputType="textEmailAddress"
+                android:maxLines="1"
+                android:singleLine="true" />
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/txtCrmMedicoCadastroReceita"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="CRM Medico"
+                    android:maxLength="11"
+                    android:inputType="textEmailAddress"
+                    android:maxLines="1"
+                    android:singleLine="true" />
+
+            </android.support.design.widget.TextInputLayout>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Medicamentos"
+                android:layout_marginTop="30dp"
+                android:id="@+id/textView" />
+
+            <AutoCompleteTextView
+                android:id="@+id/txtInstrucaoReceita"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="INSTRUÇÃO"
+                android:inputType="textEmailAddress"
+                android:maxLines="1"
+                android:maxLength="60"
+                android:layout_marginTop="20dp"
+                android:singleLine="true"
+                android:layout_gravity="center_horizontal" />
+
+            <AutoCompleteTextView
+                android:id="@+id/txtNomeReceita"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="NOME RECEITA"
+                android:inputType="textEmailAddress"
+                android:maxLength="50"
+                android:maxLines="1"
+                android:layout_marginTop="20dp"
+                android:singleLine="true"
+                android:layout_gravity="center_horizontal" />
+
+            <AutoCompleteTextView
+                android:id="@+id/txtUsoReceita"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="USO"
+                android:inputType="textEmailAddress"
+                android:maxLines="1"
+                android:maxLength="50"
+                android:layout_marginTop="20dp"
+                android:singleLine="true"
+                android:layout_gravity="center_horizontal" />
+
+            <AutoCompleteTextView
+                android:id="@+id/txtContraIndicacaoReceita"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="CONTRA-INDICACAO"
+                android:inputType="textEmailAddress"
+                android:maxLines="1"
+                android:maxLength="80"
+                android:layout_marginTop="20dp"
+                android:singleLine="true"
+                android:layout_gravity="center_horizontal" />
+
+            <AutoCompleteTextView
+                android:id="@+id/txtNumeroAnvisaReceita"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Nº ANVISA"
+                android:inputType="number"
+                android:maxLength="11"
+                android:maxLines="1"
+                android:layout_marginTop="20dp"
+                android:singleLine="true"
+                android:layout_gravity="center_horizontal" />
+
+            <Button
+                style="?android:textAppearanceSmall"
+                android:id="@+id/botaoAddMedicamento"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="Add Medicamento"
+                android:textStyle="bold"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true" />
+
+
+            <ListView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:id="@+id/medicamentos"
+                android:layout_gravity="center_horizontal" />
+
+            <Button
+                android:id="@+id/botaoCadastrarReceita"
+                style="?android:textAppearanceSmall"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Cadastrar"
+                android:textStyle="bold" />
+
+            <Button
+                style="?android:textAppearanceSmall"
+                android:id="@+id/botaoVoltarCadastroReceita"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="Voltar"
+                android:textStyle="bold"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true" />
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TableLayout
+            android:layout_width="270dp"
+            android:layout_height="60dp"
+            android:layout_alignParentTop="true"
+            android:id="@+id/tableLayout">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"></TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"></TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="Nome:"
+                    android:textColor="#000000"
+                    android:id="@+id/textView15"
+                    android:layout_column="1" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="Medium Text"
+                    android:textColor="#000000"
+                    android:id="@+id/txtNomeMedicamento"
+                    android:layout_column="5" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"></TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"></TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="Status:"
+                    android:textColor="#000000"
+                    android:id="@+id/textView16"
+                    android:layout_column="1" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="ASASAS"
+                    android:textColor="#000000"
+                    android:id="@+id/txtStatusMedicamento"
+                    android:layout_column="5" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"></TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            </TableRow>
+        </TableLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/tableLayout"
+            android:layout_alignParentStart="true">
+
+        </LinearLayout>
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:text="Vender"
+            android:id="@+id/botaoVenderMedicamento"
+            android:layout_column="40"
+            android:layout_gravity="right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/tableLayout"
+            android:textSize="8dp" />
+
+    </RelativeLayout>
+</LinearLayout>
